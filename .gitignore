@@ -1,0 +1,18 @@
+target
+book
+
+# MacOS temp files
+
+.DS_Store
+
+# Vscode settings
+.vscode
+
+# Ignore JetBrains specific files.
+.idea/
+
+# Ignore VIM temporary and swap files.
+*.sw?
+*~
+
+src/getting-started.md
