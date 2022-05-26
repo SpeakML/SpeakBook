@@ -1,5 +1,5 @@
 [book]
-authors = ["Blyxyas"]
+authors = ["Blyxyas <blyxyas@gmail.com>"]
 language = "en"
 multilingual = false
 src = "src"
@@ -7,6 +7,9 @@ title = "The Speak Book"
 
 [rust]
 edition = "2021"
+
+[dependencies]
+speak = "0.1.10"
 
 [output.html.playground]
 editable = true
@@ -20,3 +23,26 @@ boost-hierarchy = 2
 boost-paragraph = 1
 expand = true
 heading-split-level = 2
+
+[output.html]
+default-theme = "ayu"
+curly-quotes = true
+cname = "speak"
+show-line-numbers = true
+
+# Make sure to install the latest version of the `mdbook-variables` crate.
+# You can add it with `cargo install mdbook-variables`.
+
+[preprocessor.variables.variables]
+CURRENT_VERSION="0.1.10"
+
+# * Dependency Scripts.
+# You can use these scripts to call dependencies.
+
+# For example, if you want to use MathJax, you can put at the top of your page:
+#
+# {{ use_mathjax }}
+
+use_mathjax="<!-- MathJax --> <script async type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script> </head> <body> <!-- Provide site root to javascript --> <script type='text/javascript'> var path_to_root = '../'; var default_theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'navy' : 'ayu'; </script> <!-- Work around some values being stored in localStorage wrapped in quotes --> <script type='text/javascript'> try { var theme = localStorage.getItem('mdbook-theme'); var sidebar = localStorage.getItem('mdbook-sidebar'); if (theme.startsWith('\\'') && theme.endsWith('\\'')) { localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1)); } if (sidebar.startsWith('\\'') && sidebar.endsWith('\\'')) { localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1)); } } catch (e) { } </script> <!-- Set the theme before any content is loaded, prevents flash --> <script type='text/javascript'> var theme; try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } if (theme === null || theme === undefined) { theme = default_theme; } var html = document.querySelector('html'); html.classList.remove('no-js') html.classList.remove('ayu') html.classList.add(theme); html.classList.add('js'); </script> <!-- Hide / unhide sidebar before it is displayed --> <script type='text/javascript'> var html = document.querySelector('html'); var sidebar = 'hidden'; if (document.body.clientWidth >= 1080) { try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { } sidebar = sidebar || 'visible'; } html.classList.remove('sidebar-visible'); html.classList.add('sidebar-' + sidebar); </script>"
+
+use_mermaid="<script src='https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js'></script>"

@@ -4,7 +4,7 @@ Installing Speak is very simple, if you know how to use any Rust Crate, you know
 
 <small>
 
-**Protip:** We cannot maintain this book totally up to date, remember to check the latest version of the crate before copy + pasting the snippets.
+**Protip:** Maybe the book doesn't contain the latest version of Speak, make sure to check the [repository][repo] for the latest version.
 
 </small>
 
@@ -14,7 +14,7 @@ You can install Speak by writing this in your `Cargo.toml` file:
 
 ```toml
 [dependencies]
-speak = "0.1.10"
+speak = "{{CURRENT_VERSION}}"
 ```
 
 
@@ -28,7 +28,7 @@ This is the recommended way to configure the features of Speak:
 
 ```toml
 [dependencies]
-speak = { version = "0.1.10", features = [···] } # Use the features that you want.
+speak = { version = "{{CURRENT_VERSION}}", features = [···] } # Use the features that you want.
 ```
 
 **The available features are featured in the [main documentation of the crate][maindoc].**
@@ -44,7 +44,7 @@ speak = { git = "https://github.com/speakml/speak.git", branch = "current" }
 
 Using this way isn't recommended (it may have bugs and undocumented code), but it's possible.
 
-## Getting Started
+## Next steps
 
 At this point, you should have installed Speak, for any errors, you can open an issue on the [Github repository][repo].
 
