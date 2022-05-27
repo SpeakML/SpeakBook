@@ -104,7 +104,7 @@ Take this diagram (Not fancy because of some errors that `Mermaid.js` can't hand
 +---------+       +---+---+
 ```
 
-As you can see, the ranking system is simply, yet powerful, because with a simple if-else statement it can create a way to sort the key-value pairs, and only take into account the most important ones. It creates a distribution.
+As you can see, the ranking system is simple, yet powerful, because with a simple if-else statement it can create a way to sort the key-value pairs, and only take into account the most important ones. It creates a distribution.
 
 ### The DynMap methods
 
