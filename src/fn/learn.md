@@ -1,22 +1,22 @@
 # Learn
 
-The `learn` function is used to learn a dataset, it takes a [`DynMap`][dynmap] as input and returns a `Vec<Vec<f32>>` as output.
+The `learn` function is used to train the algorithm into learning a new dataset, and it's used in the following way:
 
 ```rust
 use speak::*;
 
 fn main() {
 	let map = map![
-		"a" => 1.0,
-		"b" => 2.0,
-		"c" => 3.0,
+		("How are you?", "I'm fine, thanks!"),
+		("What's your name?", "My name is Alex"),
+		("Do you have a name?", 1usize),
+		// ...
 	];
 
 	let learnt = learn(&map, None);
 }
 ```
-As you can see, the `learn(...)` not only takes a `DynMap` as input, but also takes a `Option<usize>` as the second argument, this second argument is the [memory]
 
-# WIP
+The `learn` function takes two arguments, the first one being a [`DynMap`][dynmap] (dataset) and the second one (Optional) being an usize, representing the 
 
 [dynmap]: ../struct/dynmap.md
