@@ -3,7 +3,6 @@
 
 "use strict";
 
-const { ADDRGETNETWORKPARAMS } = require('dns');
 const express = require('express');
 const app = express();
 
@@ -24,8 +23,8 @@ app.use(
 );
 console.log("[PATH] - " + path.resolve("../book"));
 
-app.get('/', (req, res) => res.sendFile(path.resolve('./../book/introduction.html')));
-app.get('/:page', (req, res) => res.sendFile(path.resolve(`./../book/${req.params.page}.html`)));
+app.get('/', (_, res) => res.sendFile(path.resolve('./../book/introduction')));
+app.get('/:page', (req, res) => res.sendFile(path.resolve(`./../book/${req.params.page}`)));
 
 // app.listen(port, () => console.log(`[SERVER] - STARTED ON PORT ${port}`));
 server.listen(port, ADDRESS, () => console.log(`[SERVER] - STARTED ON PORT ${port} IP ${ADDRESS}`));

@@ -133,7 +133,9 @@ The `encourage` takes two arguments, the first is the index of the key-value pai
 
 If the *"how much?"* argument (the second) is more than the current index, it will move the index to the first place.
 
-<small>**Protip:**You can use `encourage_by_str` to search the key that you're giving before encouraging, if you want to encourage a value, use `encourage` with the `search_value` function (That function will return the index of the value.)</small>
+<small>
+
+**Protip:**You can use `encourage_by_str` to search the key that you're giving before encouraging, if you want to encourage a value, use `encourage` with the `search_value` function (That function will return the index of the value.)</small>
 
 Note that [`DynMap` documentation][dynmap_doc] include a list of all the methods that `DynMap` has.
 

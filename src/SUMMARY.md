@@ -5,8 +5,8 @@
   - [Getting started](./getting-started.md)
 
 - [Objects](./objects.md)
-  - [`DynMap`](struct/dynmap.md)
+  - [`DynMap`](./struct/dynmap.md)
 
 - [Functions](./functions.md)
-  - [`learn`](fn/learn.md)
-  - [`run`](fn/run.md)
+  - [`learn`](./fn/learn.md)
+  - [`run`](./fn/run.md)

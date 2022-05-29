@@ -17,4 +17,4 @@ web/node_modules
 *.sw?
 *~
 
-src/getting-started.md
+build.sh
