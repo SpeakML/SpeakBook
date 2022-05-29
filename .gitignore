@@ -1,6 +1,8 @@
 target
 book
 
+web/node_modules
+
 # MacOS temp files
 
 .DS_Store

@@ -1,0 +1,25 @@
+{
+	"name": "The Speak Book",
+	"version": "0.1",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+
+	"keywords": [
+		"speak",
+		"book",
+		"crate",
+		"rust",
+		"rust crate",
+		"Alex G. C.",
+		"Blyxyas"
+	],
+
+	"author": "Alex G. C.",
+
+	"dependencies": {
+		"express": "^4.18.1"
+	}
+}
