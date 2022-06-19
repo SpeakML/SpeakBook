@@ -1,7 +1,7 @@
 target
 book
 
-web/node_modules
+node_modules
 
 # MacOS temp files
 

@@ -29,6 +29,7 @@ default-theme = "ayu"
 curly-quotes = true
 cname = "speak"
 show-line-numbers = true
+additional-css = ["/css/speak.css"]
 
 # Make sure to install the latest version of the `mdbook-variables` crate.
 # You can add it with `cargo install mdbook-variables`.
