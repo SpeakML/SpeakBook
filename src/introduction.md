@@ -14,7 +14,7 @@ This is the official Speak book, where you can find all the information you need
 
 This book isn't meant for reading all in one go, but as a reference, as a more in-depth documentation, and as a way to get started with Speak.
 
-If you want to install Speak as a dependency to your Rust project, jump to the next section with the arrow to the right going to *[**1.1** Instalación][install]*
+If you want to install Speak as a dependency to your Rust project, jump to the next section with the arrow to the right going to *[**1.1** Installation][install]*
 
 <small>
 

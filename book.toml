@@ -29,13 +29,12 @@ default-theme = "ayu"
 curly-quotes = true
 cname = "speak"
 show-line-numbers = true
-additional-css = ["/css/speak.css"]
 
 # Make sure to install the latest version of the `mdbook-variables` crate.
 # You can add it with `cargo install mdbook-variables`.
 
 [preprocessor.variables.variables]
-CURRENT_VERSION="0.1.10"
+CURRENT_VERSION="0.1.11"
 
 # * Dependency Scripts.
 # You can use these scripts to call dependencies.
